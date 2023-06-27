@@ -1,0 +1,30 @@
+/* Write your CSS here */
+.prime-video-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000000;
+  padding-bottom: 60px;
+}
+.prime-video-image {
+  height: 350px;
+  width: 100%;
+}
+
+.action-movies-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  padding-left: 30px;
+}
+.movies-category {
+  align-items: flex-start;
+  color: #ffffff;
+  font-family: 'Roboto';
+}
+.movies-slider-container {
+  width: 95%;
+  padding-left: 30px;
+}
