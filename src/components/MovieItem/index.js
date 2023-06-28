@@ -7,7 +7,7 @@ import Popup from 'reactjs-popup'
 
 const MovieItem = props => {
   const {movieDetails} = props
-  const {categoryId, videoUrl, thumbnailUrl} = movieDetails
+  const {videoUrl, thumbnailUrl} = movieDetails
   return (
     <Popup
       modal
@@ -26,7 +26,12 @@ const MovieItem = props => {
     >
       {close => (
         <div className="modal-container">
-          <button type="button" className="close-button" onClick={close}>
+          <button
+            type="button"
+            data-testid="closeButton"
+            className="close-button"
+            onClick={close}
+          >
             <IoMdClose size="25" />
           </button>
           <ReactPlayer url={videoUrl} />
